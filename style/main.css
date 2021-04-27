@@ -15,6 +15,7 @@
 body {
     background: var(--preta); /*cor do fundo*/
     font-family: 'Times New Roman', Times, serif; /*fonte padrão*/
+    color: white;
 }
 
 /*Definindo um conteiner para o h2 e elemamentos nav*/
@@ -43,4 +44,25 @@ header nav a {
 /*Muda a cor da letra quando passar o mouse em cima evento = hover*/
 header nav a:hover {
     color: #fff;
+}
+
+/* Formatando dados do filme principal*/
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%) ,url('/img/capa_breaking_bad.jpg'); /*Insere um gradiente na impagem*/
+    height: 400px;
+    background-size: cover cove; /*area de cobertura da imagem*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*Se comporta de acordo com o flex direction*/
+    align-items: flex-start; /*Se comporta de acordo com o flex direction*/
+}
+
+.filme-principal .descricao {
+    margin-bottom: 90px;
+}
+
+.filme-principal .titulo {
+    font-size: 40px;
 }
