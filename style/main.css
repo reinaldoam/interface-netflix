@@ -1,0 +1,46 @@
+
+/* Definição de variáveis globais*/
+:root {
+    --vermelho: #e50914; 
+    --preta: #141414; 
+}
+
+/* Resetando o css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--preta); /*cor do fundo*/
+    font-family: 'Times New Roman', Times, serif; /*fonte padrão*/
+}
+
+/*Definindo um conteiner para o h2 e elemamentos nav*/
+header .container {
+    display: flex;
+    flex-direction: row; /*como os itens flexíveis são colocados no contêiner flexível, definindo o eixo principal e a direção (normal ou invertido)*/
+    align-items: center;
+    justify-content: space-between; /*Cria um espaçamento entre a tag h2 e a tag nav*/
+}
+
+/*Formatando o logo*/
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial black', Times;
+    font-size: 40px;
+}
+
+/*Ajusta o elementos nav (menu)*/
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+/*Muda a cor da letra quando passar o mouse em cima evento = hover*/
+header nav a:hover {
+    color: #fff;
+}
