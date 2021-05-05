@@ -41,7 +41,7 @@ header nav a {
     margin-right: 10px;
 }
 
-/*Muda a cor da letra quando passar o mouse em cima evento = hover*/
+/*evento para mudar a cor do menu quando passar o mouse em cima*/
 header nav a:hover {
     color: #fff;
 }
@@ -50,9 +50,9 @@ header nav a:hover {
 
 .filme-principal {
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%) ,url('/img/capa_breaking_bad.jpg'); /*Insere um gradiente na impagem*/
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%) ,url('/img/capa_breaking_bad.jpg');
     height: 400px;
-    background-size: cover cove; /*area de cobertura da imagem*/
+    background-size: cover cove; /*pega a area toda para cobertura da imagem*/
     display: flex;
     flex-direction: column;
     justify-content: center; /*Se comporta de acordo com o flex direction*/
@@ -60,9 +60,35 @@ header nav a:hover {
 }
 
 .filme-principal .descricao {
+    margin-top: 10px;
     margin-bottom: 90px;
 }
 
 .filme-principal .titulo {
+    margin-top: 15%;
     font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.filme-principal .botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer; /*identifica o botão como sendo um ponteiro*/
+    transition: 3s ease all; /*Suaviza a mudança de cor ao trocar de um botão para outro*/
+}
+
+/*Evento para mudar as cores quando selecionar o botao*/
+.filme-principal .botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.filme-principal .botao i{
+    margin-right: 5px;
 }
